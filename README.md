@@ -1,4 +1,4 @@
-🌤 Comfort Index Algorithm
+# 🌤 Comfort Index Algorithm
 The Comfort Index is a numerical score ranging from 0 to 100, where:
 
 100 represents ideal and highly comfortable weather
@@ -6,13 +6,13 @@ The Comfort Index is a numerical score ranging from 0 to 100, where:
 0 represents extremely uncomfortable weather
 
 
-📊 Weather Parameters Used
+# 📊 Weather Parameters Used
 
 Temperature (°C)
 Humidity (%)
 Wind Speed (m/s)
 
-🧮 Comfort Index Formula
+# 🧮 Comfort Index Formula
 Comfort Score =
 100 − |Temperature − 22| × 2 − Humidity × 0.3 − Wind Speed × 2
 
