@@ -15,7 +15,7 @@ The Comfort Index is a numerical score ranging from 0 to 100, where:
 
 # 🧮 Comfort Index Formula
 
-*** Comfort Score =100 − |Temperature − 22| × 2 − Humidity × 0.3 − Wind Speed × 2 ***
+***Comfort Score = 100 − |Temperature − 22| × 2 − Humidity × 0.3 − Wind Speed × 2***
 
 
 - 22°C is considered an ideal comfortable temperature.
