@@ -5,4 +5,6 @@
  {"CityCode":"2147714","CityName":"Sydney","Temp":"27.3","Status":"Rain"},
  {"CityCode":"4930956","CityName":"Boston","Temp":"4.2","Status":"Mist"},
  {"CityCode":"1796236","CityName":"Shanghai","Temp":"10.1","Status":"Clouds"},
- {"CityCode":"3143244","CityName":"Oslo","Temp":"-3.9","Status":"Clear"}  ]}
+ {"CityCode":"3143244","CityName":"Oslo","Temp":"-3.9","Status":"Clear"},
+ {"CityCode":"1850147","CityName":"Tokyo","Temp":"18.4","Status":"Clouds"},
+ {"CityCode":"5128581","CityName":"New York","Temp":"15.2","Status":"Rain"} ]}
