@@ -45,7 +45,7 @@ function Weather() {
 
       {/* Temperature */}
       <div className="flex items-center gap-2 mb-3">
-        {/* Thermometer SVG */}
+       
         <svg className="w-6 h-6 text-red-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M14 14.76V3a2 2 0 00-4 0v11.76a4 4 0 104 0z" />
         </svg>

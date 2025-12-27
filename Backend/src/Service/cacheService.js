@@ -1,6 +1,6 @@
 const NodeCache = require("node-cache");
 
-// Create cache instance
+
 const cache = new NodeCache();
 
 /**

@@ -10,17 +10,16 @@ const router = express.Router();
 
 router.get("/weather", async (req, res) => {
   try {
-    // 1️⃣ Check cache
+
     const cached = cache.get("weather-data");
     if (cached) {
       return res.json({ source: "CACHE", data: cached });
     }
 
-    // 2️⃣ Read cities.json
+   
     const citiesPath = path.resolve(__dirname, "cities.json");
     const citiesFile = JSON.parse(fs.readFileSync(citiesPath, "utf-8"));
 
-    // ✅ Extract array
     const cities = citiesFile.List;
 
     if (!Array.isArray(cities)) {
@@ -29,7 +28,7 @@ router.get("/weather", async (req, res) => {
 
     const results = [];
 
-    // 3️⃣ Fetch weather data
+    
     for (const city of cities.slice(0, 10)) {
       const weather = await fetchWeather(city.CityCode);
       const score = calculateComfort(weather);
@@ -44,13 +43,12 @@ router.get("/weather", async (req, res) => {
       });
     }
 
-    // 4️⃣ Sort by comfort score
+    
     results.sort((a, b) => b.comfortScore - a.comfortScore);
 
-    // 5️⃣ Assign rank
     results.forEach((c, i) => (c.rank = i + 1));
 
-    // 6️⃣ Cache for 5 minutes
+   //cache results for 5 minutes
     cache.set("weather-data", results, 300);
 
     res.json({ source: "API", data: results });
